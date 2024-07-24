@@ -17,9 +17,9 @@ echo "            -> Done"
 echo "*****Downloading SonarQube 9.7.1 version"
 cd /opt 
 sudo rm -rf sonarqube*
-sudo wget -q https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.4.87374.zip
-sudo unzip -q sonarqube-9.9.4.87374.zip -d /opt/sonarqube 1>/dev/null
-sudo rm -rf sonarqube-9.9.4.87374.zip
+sudo wget -q https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.6.92038.zip
+sudo unzip -q sonarqube-9.9.6.92038.zip -d /opt/sonarqube 1>/dev/null
+sudo rm -rf sonarqube-9.9.6.92038.zip
 echo "            -> Done"
 
 # Changing Ownership as Sonarqube Does not work with Root User
@@ -30,7 +30,7 @@ echo "            -> Done"
 # Starting SonarQube Service
 echo "*****Starting SonarQube Server"
 cd /opt
-sudo su -m ubuntu -c "./sonarqube/sonarqube-9.9.4.87374/bin/linux-x86-64/sonar.sh start 1>/dev/null"
+sudo su -m ubuntu -c "./sonarqube/sonarqube-9.9.6.92038/bin/linux-x86-64/sonar.sh start 1>/dev/null"
 
 
 # Check if SonarQube is working
