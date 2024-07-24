@@ -30,7 +30,7 @@ echo "            -> Done"
 # Starting SonarQube Service
 echo "*****Starting SonarQube Server"
 cd /opt
-sudo su -m ubuntu -c "./sonarqube/sonarqube-9.9.4.87374.zip/bin/linux-x86-64/sonar.sh start 1>/dev/null"
+sudo su -m ubuntu -c "./sonarqube/sonarqube-9.9.4.87374/bin/linux-x86-64/sonar.sh start 1>/dev/null"
 
 
 # Check if SonarQube is working
