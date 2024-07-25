@@ -25,6 +25,7 @@ echo "            -> Done"
 # Changing Ownership as Sonarqube Does not work with Root User
 echo "*****Changing Ownership of file to Ubuntu User"
 sudo chown -R ubuntu: /opt/sonarqube/*
+sudo chown -R ubuntu: /opt/soanrqube
 echo "            -> Done"
 
 # Starting SonarQube Service
